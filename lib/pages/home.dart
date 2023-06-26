@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world/models/user.dart';
 import 'package:hello_world/routes/args/about_page_args.dart';
+import 'package:hello_world/widgets/custom_button.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -12,6 +13,7 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            CustomButton(),
             const Text("Home Page"),
             FilledButton(
                 onPressed: () {
